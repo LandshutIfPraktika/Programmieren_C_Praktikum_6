@@ -7,6 +7,9 @@
 
 #ifndef SHAPE_H_
 #define SHAPE_H_
+#include <iostream>
+
+
 
 namespace sgheldd
 {
@@ -24,16 +27,19 @@ class Shape
 private:
 	enum COLOUR colour;
 
-public:
+protected:
 	Shape();
-	virtual ~Shape();
 
+public:
+
+	virtual ~Shape();
 	enum COLOUR get_colour();
-	char *get_colour_s();
+	std::string get_colour_s();
 
 	void set_colour(enum COLOUR colour);
 
 	virtual void print();
+	virtual float area() = 0; //purely virtual function as shape->area() is not possible
 };
 
 } /* namespace sgheldd */

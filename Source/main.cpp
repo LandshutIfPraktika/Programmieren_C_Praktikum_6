@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 	int i;
 	Shape *geo;
 
-	for(i=0; i<10; i++)
+	for(i=0; i<100; i++)
 	{
 		geo=generate_Shape();
 		geo->print();
@@ -51,6 +51,8 @@ enum COLOUR rand_colour()
 		return BLUE;
 	case 3:
 		return YELLOW;
+	default:
+		return NONE;
 	}
 }
 

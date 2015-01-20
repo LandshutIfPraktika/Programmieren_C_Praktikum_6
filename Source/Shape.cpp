@@ -33,7 +33,7 @@ void Shape::set_colour(enum COLOUR colour)
 	this->colour = colour;
 }
 
-char* Shape::get_colour_s()
+string Shape::get_colour_s()
 {
 	switch(this->colour)
 	{
@@ -42,6 +42,7 @@ char* Shape::get_colour_s()
 	case 2: return "Green";
 	case 3: return "Yellow";
 	case 4: return "Blue";
+	default: return "None";
 	}
 }
 
