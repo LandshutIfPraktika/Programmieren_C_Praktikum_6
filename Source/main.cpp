@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 		delete geo;
 	}
 
-
+        cout << "fertig" << endl;
 
 	return 0;
 }
@@ -87,4 +87,5 @@ Shape *generate_Shape()
 		return shape;
 	}
 	}
+	return NULL;
 }
